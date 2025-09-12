@@ -105,7 +105,7 @@ export default {
   methods: {
     parseWorkoutData(jsonString) {
       try {
-        this.parsedWorkouts = jsonString ? JSON.parse(jsonString) : {};
+        this.parsedWorkouts = jsonString;
       } catch (e) {
         console.error("Erro ao parsear JSON da ficha de treino:", e);
         this.parsedWorkouts = {};
