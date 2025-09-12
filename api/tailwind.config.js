@@ -8,10 +8,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        'grafite': '#291833',
+        'grafite': '#2b2b2b',
         'roxo': '#570475',
         'branco': '#FFFFFF',
-        'cinza': '#CFCFCF',
+        'cinza': {
+          DEFAULT: '#CFCFCF',
+          '300': '#CFCFCF',
+          '700': '#374151',
+          '900': '#111827',
+        },
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
