@@ -10,6 +10,6 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('/fichas-treino', [HttpFichaTreinoController::class, 'store']);
+Route::post('/fichas-treino', [DDDFichaTreinoController::class, 'store']);
 Route::post('/fichas/suggest', [DDDFichaTreinoController::class, 'suggest']);
 Route::resource('/alunos', AlunoController::class);
